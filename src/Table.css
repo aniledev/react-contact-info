@@ -1,0 +1,12 @@
+button:focus,
+button:hover {
+  background-color: lightpink;
+  color: black;
+  border: 5px solid lightblue;
+}
+
+button {
+  background-color: red;
+  color: white;
+  border: none;
+}

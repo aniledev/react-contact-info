@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import "./index.css";
+import "./Table.css";
 
 const TableHeader = () => {
   return (
@@ -6,6 +8,7 @@ const TableHeader = () => {
       <tr>
         <th>Name</th>
         <th>Job</th>
+        <th>{}</th>
       </tr>
     </thead>
   );
