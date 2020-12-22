@@ -41,12 +41,15 @@ class App extends Component {
 
   render() {
     // create character data to pass through to Table component as a property/prop
-    const characters = [];
+    const { characters } = this.state;
 
     return (
       <div className="container">
-        {/* Using the characters data to pass through to Table as a property*/}
-        <Table characterData={characters} />
+        {/* Using the characters data & removeCharacter function to pass through to Table as a property*/}
+        <Table
+          characterData={characters}
+          removeCharacter={this.removeCharacter}
+        />
       </div>
     );
   }
