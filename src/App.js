@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import Table from "./Table";
+import Form from "./Form";
 import "./index.css";
 
 // props gives us a one way data flow, parent -> child
@@ -8,24 +9,7 @@ import "./index.css";
 
 class App extends Component {
   state = {
-    characters: [
-      {
-        name: "Charlie",
-        job: "Janitor",
-      },
-      {
-        name: "Orion",
-        job: "Software Developer",
-      },
-      {
-        name: "Tyanna",
-        job: "Artist",
-      },
-      {
-        name: "Aisha",
-        job: "Manager",
-      },
-    ],
+    characters: [],
   };
 
   // this function removes a character from the state.characters array
@@ -39,6 +23,11 @@ class App extends Component {
     });
   };
 
+  handleSubmit = (character) => {
+    // using the spread operator to add a new character to the existing characters array
+    this.setState({ characters: [...this.state.characters, character] });
+  };
+
   render() {
     // create character data to pass through to Table component as a property/prop
     const { characters } = this.state;
@@ -50,6 +39,7 @@ class App extends Component {
           characterData={characters}
           removeCharacter={this.removeCharacter}
         />
+        <Form handleSubmit={this.handleSubmit} />
       </div>
     );
   }

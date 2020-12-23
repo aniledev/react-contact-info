@@ -1,0 +1,7 @@
+[type="button"]:focus,
+[type="button"]:active {
+  color: black;
+  background-color: lightskyblue;
+  text-decoration: none;
+  border: none;
+}

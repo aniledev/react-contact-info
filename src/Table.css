@@ -1,8 +1,8 @@
 button:focus,
 button:hover {
-  background-color: lightpink;
+  background-color: lightcoral;
   color: black;
-  border: 5px solid lightblue;
+  border: none;
 }
 
 button {
