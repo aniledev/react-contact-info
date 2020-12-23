@@ -9,3 +9,6 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+
+// ADD FULL UPDATE FUNCTIONALITY TO THE FORM, ABLE TO EDIT NAME AND EDIT JOB INFO
+// PUSH TO GITHUB USING A BUNDLER
