@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import Table from "./Table";
 import Form from "./Form";
 import "./index.css";
