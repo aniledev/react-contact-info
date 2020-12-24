@@ -809,6 +809,7 @@ button,
   cursor: pointer;
   text-decoration: none;
   line-height: 1;
+  margin: 20px;
 }
 
 .button:hover,
